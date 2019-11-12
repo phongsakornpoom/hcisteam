@@ -1,0 +1,734 @@
+.back{ background-color:#f2f2f2;}
+.ground{ background-color:#f3f3f3;}
+.grey{background-color:grey;}
+.yellow{color:yellow;}
+.blue{color:blue;}
+.color{border:2px solid #FFFF00; background-color:grey; font-size:30; color:#FFBF00;border-bottom:3px; border-left:3px; border-right:3px; border-top:3px;}
+input.submit{border:1px solid; border-right:2px; border-top:2px; border-left:2px; border-left:2px;}
+.orange{color:orange;}
+.black{color:black;}
+ font-family: 'Quicksand', sans-serif;
+ @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+html {
+  scroll-behavior: smooth;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+.button2 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+/* Steam Blog css */
+
+.blogtoys {
+	  float: left;
+  max-height: 25px;
+  max-width: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+
+
+/* Blog css */
+
+
+.toycard {
+	
+   background-color: white;
+   padding: 20px;
+   margin-top: auto 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+   transition: transform .2s;
+}
+
+.toyrightcolumn {
+  float: left;
+  max-height: 100px;
+  max-width: 275px;
+  padding-right: 10px;
+  border-radius: 10px;
+  
+ 
+}
+
+.toyleftcolumn {
+  float: right;
+  max-height: 100px;
+  max-width: 275px;
+  padding-left: 10px;
+  border-radius: 10px;
+  
+ 
+}
+
+
+
+.toycard:hover {
+  -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.toycontainer {
+  padding: 16px 16px;
+ 
+}
+
+/* Side navbar */
+
+
+ #sidebar { 
+  width: 190px; 
+  position: fixed; 
+ margin-left: 5px;
+margin-top: 20px; }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.blogcard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  float: left;
+}
+
+.blogcardside {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  border-radius: 10px;
+    max-height: 150px;
+  max-width: 300px;
+  
+}
+
+.blogcardbox {
+	  float: left;
+  max-height: 250px;
+  max-width: 350px;
+  padding: 10px;
+	
+}
+
+.blogcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.blogcardside:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.blogcontainer {
+  padding: 8px 16px;
+background-color:white;
+  
+}
+
+.blogcontainer2{
+  padding: 20px 20px;
+
+}
+
+ footer {
+	align-content: center ;
+	background-color:#282828;
+	margin-bottom: 0;
+}
+
+
+
+	.column {
+		float: left;
+ 	 	width: 20%;
+  		padding: 10px;
+	}
+	
+	@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+	
+/* Toys card featers */
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.toycardf button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin: auto;
+  color: white;
+  background-color: #1D8ECE;
+  text-align: center;
+  cursor: pointer;
+  width: 240px;
+  font-size: 14px;
+  
+}
+
+.toycardf button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+	
+	
+	.toycardf2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin: auto;
+  color: white;
+  background-color: #1D8ECE;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+  font-size: 14px;
+  
+}
+
+.toycardf2 button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+	.toycardf3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin: auto;
+  color: white;
+  background-color: #1D8ECE;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  
+}
+
+.toycardf3 button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+
+	.toycardf4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  padding-bottom: 12px;
+  margin: auto;
+  color: white;
+  background-color: #1D8ECE;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  
+}
+
+.toycardf4 button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+	
+		.toycardf5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  padding-bottom: 12px;
+  margin: auto;
+  color: white;
+  background-color: #F9A602;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  
+}
+
+.toycardf5 button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+	
+		.toycardf4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  margin: auto;
+  color: white;
+  background-color: #1D8ECE;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+  
+}
+
+.toycardf4 button:hover {
+  opacity: 0.7;
+}
+	 footer {
+	align-content: center ;
+	margin-bottom: 0;
+}
+	
+	body {
+  font-family: Arial;
+
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 25%;
+}
+
+.centercolumn {
+	float: left;
+	width: 50%;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.centerbottomcolumn {
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.centerbottomcolumn2 {
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top:10px;
+}
+
+.buttonleft {
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.buttonright {
+	float: right;
+	width: 25%;
+	padding-right: 10px;
+	padding-left: 10px;
+	color:blue;
+}
+
+.blogcentercolumn {
+	float: left;
+	width: 75%;
+	padding-right: 20px;
+
+}
+.blogcentercolumn2 {
+	float: left;
+	width: 75%;
+	padding-right: 20px;
+
+}
+
+.blogbottomcolumn {
+	float: bottom;
+
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+
+}
+
+.fakeimg2 {
+  background-color: #aaa;
+  width: 27%;
+
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.smallcard {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+    width: 200px;
+  height: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+/* RIBBONS */
+	
+	.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #2980b9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #Ff0000;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+/* bottom left*/
+.ribbon-bottom-left {
+  bottom: -10px;
+  left: -10px;
+}
+.ribbon-bottom-left::before,
+.ribbon-bottom-left::after {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-bottom-left::before {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-bottom-left::after {
+  top: 0;
+  left: 0;
+}
+.ribbon-bottom-left span {
+  right: -25px;
+  bottom: 30px;
+  transform: rotate(225deg);
+}
+
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
+	
+	
+	
+	/* Search Bar */
+	
+	form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 25px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.checked {
+  color: orange;
+}
+span{scale:10%;}
+	
+	div.left {
+left:500px;
+
+	
+}
+
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,606 @@
+<html>
+<head>
+<title></title>
+
+<link rel="stylesheet" href="steam.css" type="text/css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Load Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+				<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+</script>
+</head>
+
+
+<body class="ground">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><span>Stem</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="intro.html"> <font size= "+1">Home </font> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FindingClass.html"> <font size= "+1">Find class </font> </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="coach.html"><font size= "+1">Be a coach</font></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="steam.html" > <font size= "+1"> Toys & Blogs </font></a>
+      </li>
+	  
+	     <li class="nav-item">
+        <a class="nav-link" href="contact.html" > <font size= "+1"> Contact us </font></a>
+      </li>
+    </ul>
+	
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">Login</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:5px;">Sign up</button>
+    </form>
+	
+	 <a  href="#"><img src="shop.png" alt="toy" style="height:35px; width:40px; padding-right: 5px; padding-left: 5px;"></a>
+  </div>
+</nav>
+  
+  
+  
+  
+  
+
+
+
+
+ <div class="container ">
+
+
+<div class="row">
+ <div class ="leftcolumn">
+	    <div class="card">
+    
+	<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+ 
+       <form>
+      <p></p>
+      Filtered by:
+            <select name="Teacher">
+              <option>Select your filter</option>
+              <option value="1">Closest to current Location</option>
+              <option value="2">Closest to current Date</option>
+              <option value="3">Upcoming season..</option>
+            </select>
+            <p></p>
+            <p></p>
+
+            <hr/> <!--first line-->
+            <h5>ACTIVITY TYPE</h5>
+            <label><input type="checkbox" name="Outdoor"/>  Outdoor</label>
+            <label><input type="checkbox" name="Indoor"/> Indoor</label>
+            <p></p>
+            <hr/>
+<h5><a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-caret-down"></i>STUDY COURSES</a></h5>
+          <div id="collapseTwo" class="collapse two">
+            <div class="well">
+            <label>
+            <input type="checkbox" name="Math for kids"/> Math for kids</label>
+            <br/>
+            <label>
+            <input type="checkbox" name="Science"/> Science</label> <br/>
+            <label>
+            <input type="checkbox" name="English writing"/></label> English writing
+            <p></p>
+            </div>
+          </div>
+            <p></p>
+            <hr/>
+            <h5><a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-caret-down"></i>OTHER COURSES</a></h5>
+          <div id="collapseOne" class="collapse one">
+            <div class="well">
+            <label>
+            <input type="checkbox" name="Math for kids"/> Cooking </label>
+            <br/>
+            <label>
+            <input type="checkbox" name="Science"/> Dancing </label> <br/>
+			<label>
+            <input type="checkbox" name="Science"/> Drawing </label> <br/>
+            <label>
+            <input type="checkbox" name="English writing"/></label> Music lessons
+            <p></p>
+            </div>
+          </div>
+
+      </form>
+    </div>
+    <div class="card">
+      <h5>Top Blogs </h5>
+	  <hr>
+    <a href="blog1.html" style="color: black"> <img src="cook.jpg" class="fakeimg2" align ="left"  style="height:60px;  margin-right: 8px;" >  <b>The greatest cake ever made in Bankok </b></a>
+      <hr>
+
+    <a href="blog1.html" style="color: black"> <img src="kid2.jpg" class="fakeimg2" align ="left"  style="height:60px;  margin-right: 8px;" >  <b>Traveling for fun! A jorney to the north park </b></a>
+      <hr>
+
+    <a href="blog1.html" style="color: black"> <img src="kid3.jpg" class="fakeimg2" align ="left"  style="height:60px;  margin-right: 8px;" >  <b>Dance along with Jenny Will at the centra park of Bankok </b></a>
+      <hr>
+
+    <a href="blog1.html" style="color: black"> <img src="kid4.jpg" class="fakeimg2" align ="left"  style="height:60px;  margin-right: 8px;" >  <b>The class that will make your kids happy and smart! </b></a>
+      <hr>
+
+    <a href="blog1.html" style="color: black"> <img src="kid5.jpg" class="fakeimg2" align ="left"  style="height:60px;  margin-right: 8px;" >  <b>Fun park at the national Fun park? </b></a>
+      <hr>
+	
+    <a href="blog1.html" style="color: black"> <img src="kid6.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;">  <b>Football with John Gret the best football coach! </b></a>
+      <hr>
+	  
+	  
+    </div>
+	
+	  <div class="card">
+      <h5>Latest </h5>
+	  <hr>
+	 <a href="blog1.html" style="color: black"><h6> <font size="2">Fun park at the national Fun park? </b> </font></a> <font size= "-2" color="grey"> December, 12, 2018 </font> 
+	
+	  
+	<a href="blog1.html" style="color: black"><h6> <font size="2">Games and Fun!!! </b> </font></a> <font size= "-2" color="grey"> <br>June, 12, 2018</br> </font> 
+	  
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">There is a park that serve free sweets! </b> </font></a> <font size= "-2" color="grey"> <br>May, 7, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Best toys for your child </b> </font></a> <font size= "-2" color="grey"> <br>May, 6, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Amazing tricks and tips </b> </font></a> <font size= "-2" color="grey"> <br>May, 2, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Great week for swimming in Swoon </b> </font></a> <font size= "-2" color="grey"> <br>April, 26, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Jackpot, the top toys of 2018 </b> </font></a> <font size= "-2" color="grey"> <br>Feburary, 15, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Hello new toys! In Stem toys </b> </font></a> <font size= "-2" color="grey"> <br>January, 10, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Exciting games for parents and kids </b> </font></a> <font size= "-2" color="grey"> <br>January, 1, 2018</br> </font> 
+	  	  
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">There is a park that serve free sweets! </b> </font></a> <font size= "-2" color="grey"> <br>May, 7, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Best toys for your child </b> </font></a> <font size= "-2" color="grey"> <br>May, 6, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Amazing tricks and tips </b> </font></a> <font size= "-2" color="grey"> <br>May, 2, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Great week for swimming in Swoon </b> </font></a> <font size= "-2" color="grey"> <br>April, 26, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Jackpot, the top toys of 2018 </b> </font></a> <font size= "-2" color="grey"> <br>Feburary, 15, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Hello new toys! In Stem toys </b> </font></a> <font size= "-2" color="grey"> <br>January, 10, 2018</br> </font> 
+	  <a href="blog1.html" style="color: black"><h6> <font size="2">Exciting games for parents and kids </b> </font></a> <font size= "-2" color="grey"> <br>January, 1, 2018</br> </font> 
+	  
+	  
+	  <hr>
+	  
+    </div>
+	    <div class="card">
+      <h3>Subcribe to Newsletter</h3>
+      <p>	<form class="example" action="action_page.php">
+  <input type="text" placeholder="Email" name="search">
+  <button type="submit"><i class="fa fa-envelope-o"></i></button>
+</form></p>
+    </div>
+	
+	</div>
+	
+	<!-- % -->
+	
+  <div class="centercolumn">
+    <div class="card">
+	    
+      <h2>Cooking in Bangkok</h2>
+      <h5>Dec 12, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Dien Green </a> </font></h5> 
+      <img src="cook.jpg" class="fakeimg"  style="height:250px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> James Bond </a>  Catagory: <a href="FindingClass" style="color: grey"> Cooking,</a><a href="Chooseaclass" style="color: grey">Indoors, </a>  </font>
+      <p>Become a better chef with online classes by the world's greatest minds. Hours of Content. 30-Day Money Back. Teaching Assistant. Video Lessons...<font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    </div>
+	
+      <div class="card">
+      <h2>Fun time in class</h2>
+      <h5>Nov 1, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Jack Mate </a> </font></h5> 
+      <img src="kid7.jpg" class="fakeimg"  style="height:250px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Kite Jefferson </a>  Catagory: <a href="FindingClass" style="color: grey"> Playground,</a><a href="Chooseaclass" style="color: grey">Indoors, </a><a href="Chooseaclass" style="color: grey">Babysitter, </a> </font>
+      <p>KidsHealth has accurate health information about kids and teens. Learn about health, behavior, and development, from pregnancy until adulthood...<font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    </div>
+	
+	     <div class="card">
+      <h2>Cheap Study classes</h2>
+      <h5>Jun 18, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Vix Collin  </a> </font></h5> 
+      <img src="kid8.jpg" class="fakeimg"  style="height:250px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Max Robbert </a>  Catagory: <a href="FindingClass" style="color: grey"> Studies,</a><a href="Chooseaclass" style="color: grey">Indoors, </a><a href="Chooseaclass" style="color: grey">Science, </a> </font>
+      <p>Are Poor Kids Really Behind by 30 Million Words? A Debate Rages as New Research Questions One of Early Childhood's Premier Studies — and Researchers Say...<font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    </div>
+	
+		     <div class="card">
+      <h2>Cooking in Bankok</h2>
+      <h5>Jun 13, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Max Gill  </a> </font></h5> 
+      <img src="kid9.jpg" class="fakeimg"  style="height:250px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="Chooseaclass" style="color: grey">Outdoor, </a><a href="Chooseaclass" style="color: grey">Sports, </a> </font>
+      <p>And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....<font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    </div>
+	
+  </div>
+
+
+  
+  
+  <div class="rightcolumn">
+    <div class="card center-right">
+   <div class="ribbon ribbon-top-right"><span>Best Seller</span></div>
+
+  <img src="toy2.png" alt="toy" style="width:100%">
+  <h3 align="center" >Bear toy</h3>
+
+  <p class="price" align="center" >150฿</p>
+       <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					  </a >
+  <p align="center">Small and cute bear toy that is great to keep your kids happy</p>
+  <form action="store.html">
+  <div class="toycardf" >
+  <button> <a class="" align="center" href="store.html" style="color:white;"> View </a></button>
+ </div>
+ </form>
+</div>
+
+    <div class="card">
+      <h5>Popular Toys</h5>
+        	  
+  	  <hr>
+
+    <a href="store.html" style="color: black"> <img src="toys4.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					  <a class="price" align="right" >150฿</a>
+					  </a > </b>  
+      <hr>
+    <a href="store.html" style="color: black"> <img src="toy6.jpeg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					  	  <a class="price"  style=" padding-right: 30px;" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy3.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy5.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy6.jpeg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toys4.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy6.jpeg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy3.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	      <a href="store.html" style="color: black"> <img src="toy5.jpg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	  	      <a href="store.html" style="color: black"> <img src="toy6.jpeg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+      <hr>
+	  	      <a href="store.html" style="color: black"> <img src="toy1.jpeg" class="fakeimg2" align ="left"  style="height:60px; margin-right: 8px;" >  <b> The best toy out ther right now   <a align="center"> <small class="text-muted"> rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+					    <a class="price" align="right" >150฿</a>
+					  </a > </b>
+     
+  
+  
+    </div>
+
+	
+  </div>
+  
+    <div class="card">
+	<div class="row">
+  <div class="centerbottomcolumn">
+  
+  	    
+      <h4>Cooking in Bangkok</h4>
+      <h6>Jun 13, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Max Gill  </a> </font></h6> 
+      <img src="kid2.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    
+  </div>
+    <div class="centerbottomcolumn">
+  
+  	     
+            <h4>Fun time in class</h4>
+      <h6>Nov 1, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Jack Mate </a> </font></h6> 
+      <img src="kid3.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+  
+  </div>
+    <div class="centerbottomcolumn">
+  
+  	     
+
+      <h4>Cheap Study classes</h4>
+      <h6>Jun 18, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Vix Collin  </a> </font></h6>
+      <img src="kid4.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+    
+  </div>
+    <div class="centerbottomcolumn">
+  
+  	     
+      <h4>Time at park</h4>
+      <h6>Mar 04, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Max Gill  </a> </font></h6> 
+      <img src="kid5.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="Chooseaclass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+ 
+  </div>
+		<hr>
+		<br>
+      <div class="centerbottomcolumn">
+  
+  	     
+      <h4>Great times </h4>
+      <h6>Jun 09, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Jero King  </a> </font></h6> 
+      <img src="kid6.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+ 
+  </div>
+      <div class="centerbottomcolumn">
+  
+  	     
+      <h4>Cooking in Bangkok</h4>
+      <h6>Jun 13, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Max Gill  </a> </font></h6> 
+      <img src="kid7.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+ 
+  </div>
+      <div class="centerbottomcolumn">
+  
+  	     
+      <h4>Relaxing Class</h4>
+      <h6>Jan 28, 2018 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By James Bond  </a> </font></h6> 
+      <img src="kid8.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+ 
+  </div>
+  
+      <div class="centerbottomcolumn">
+  
+  	     
+      <h4>Cheif of the best</h4>
+      <h6>Nov 13, 2017 <font size= "-1" > <a href="FindingClass.html" style="color: #FF6600">By Alex Jones  </a> </font></h6> 
+      <img src="kid9.jpg" class="fakeimg"  style="height:200px;">
+	  <font size= "-1" >Coach:<a href="FindingClass.html" style="color: grey"> Hob Wills </a>  Catagory: <a href="FindingClass" style="color: grey"> Fun,</a><a href="FindingClass" style="color: grey">Outdoor, </a><a href="FindingClass" style="color: grey">Sports, </a> </font>
+      <p><font size="-1">And playing team sport can help to build confidence, learn social skills and teamwork, and establish longer term healthy lifestyle habits....</font><font size="-1"> <a href="blog1.html"> <i>Read More </i></a></font></p>
+ 
+  </div>
+  
+  
+
+   <div class="buttonleft">
+  <a href="#" class="button2">Previous Page</a>
+  </div>
+    <div class="buttonright">
+
+  </div>  <div class="buttonright">
+ 
+  </div>
+  <div class="buttonright">
+  <a href="#" class="button2" align="right" >Next Page           </a>
+  </div>
+
+  </div>
+ 
+  
+  </div>
+ 
+</div>
+<br>
+<br>
+<br>
+ 
+ 
+ </div>
+ 
+
+
+
+<div class="left">
+<fieldset class="foot">
+<footer class="page-footer font-small blue pt-4" >
+ 
+    
+
+      
+      <div class="row" style="padding-left:400px;">
+
+        
+        <div class="column" style="padding-right:300px">
+
+        	<h5 class="text-uppercase"><span style="padding-right:200px;color:white;">Parents</span></h5>
+          <ul class="list-unstyled">
+		  
+              <li>
+                <a href="#!">Find a Class</a>
+              </li>
+              <li>
+                <a href="#!">Birthday</a>
+              </li>
+               <li>
+                <a href="#!">FAQ</a>
+              </li>
+
+            </ul>
+          
+        </div>
+        
+
+        
+        <div class="column" style="padding:10px">
+
+            
+            
+
+            <ul class="list-unstyled">
+			  <li>
+				<h5 class="text-uppercase"><span style="padding-right:160px;color:white;">Coach</span></h5>
+			  </li>
+              <li>
+                <a href="#!">Our Coach</a>
+              </li>
+              <li>
+                <a href="#!">Become A Coach</a>
+              </li>
+              <li>
+                <a href="#!">Nominate Coach</a>
+              </li>
+              <li>
+                <a href="#!">Log In</a>
+              </li>
+              <li>
+                <a href="#!">Sign Up</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+          
+          <div class="column" style="padding-left:100px">
+
+           
+            <h5 class="text-uppercase"><span style="padding-right:160px;color:white;">Company</span></h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Our Approach</a>
+              </li>
+              <li>
+                <a href="#!">Team</a>
+              </li>
+              <li>
+                <a href="#!">Careers</a>
+              </li>
+              <li>
+                <a href="#!">Blog</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+
+      
+
+    </div>
+	
+</fieldset>  
+  </div>
+
+
+</body>	
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</html>

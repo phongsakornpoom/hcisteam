@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coach Application Form</title>
+
+	<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body style="background-color: #f9f9f9">
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="coach-image/head-image.jpg" class="img-fluid" alt="Responsive image">
+          </svg>
+        <div class="container">
+
+
+          <div class="carousel-caption text-left">
+            <h1 style="text-shadow: 2px 3px #000000">Coach Application Form</h1>
+          </div>
+
+
+        </div> <!-- container -->
+      </div> <!-- carousel-item active -->
+    </div> <!-- carousel-inner -->
+    
+  </div> <!-- carousel slide -->
+
+	
+<br>
+<form>
+<fieldset>
+	<legend>Personal Information</legend>
+
+	<div class="form-row">
+
+  <div class="form-group col-6">
+    <label for="givenName">Given Name</label>
+    <input type="text" class="form-control" id="givenName" placeholder="Enter Given name / First name." required>
+  </div>
+
+  <div class="form-group col-6">
+    <label for="familyName">Family Name</label>
+    <input type="text" class="form-control" id="familyName" placeholder="Enter Family name / Last name" required>
+  </div>
+
+</div> <!-- row -->
+<div class="form-row">
+<div class="form-group col-2">
+      <label for="inputGender">Gender</label>
+      <select id="inputGender" class="form-control">
+        <option selected>Choose...</option>
+        <option>Male</option>
+        <option>Femal</option>
+      </select>
+    </div>
+</div> <!-- row -->
+
+<div class="form-row">
+<div class="form-group col-12">
+    <label for="address1">Address line 1</label>
+    <input type="text" class="form-control" id="address1" placeholder="" required>
+  </div>
+</div>
+
+<div class="form-row">
+<div class="form-group col-12">
+    <label for="address2">Address line 2</label>
+    <input type="text" class="form-control" id="address2" placeholder="">
+  </div>
+</div>
+
+<div class="form-row">
+<div class="form-group col-6">
+    <label for="city">City</label>
+    <input type="text" class="form-control" id="city" placeholder="" required>
+  </div>
+
+  <div class="form-group col-6">
+    <label for="zip">Zip Code</label>
+    <input type="text" class="form-control" id="zip" placeholder="" required>
+  </div>
+</div>
+
+<div class="form-row">
+<div class="form-group col-6">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="" required>
+  </div>
+
+  <div class="form-group col-6">
+  	<label for="phone">Phone Number</label>
+    <input type="text" class="form-control" id="phone" placeholder="" maxlength="20" required>
+  	</div>
+</div> <!-- row -->
+</fieldset>
+
+<hr>
+
+<fieldset> <legend>Documents</legend>
+
+<label for="">Resume: </label>
+<div class="form-row">
+<div class="form-group col-4">
+	<div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+	</div>
+</div>
+</div>
+
+<label for="">Identity Card or Passpost: </label>
+<div class="form-row">
+<div class="form-group col-4">
+	<div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+	</div>
+</div>
+</div>
+
+	
+	
+		
+	<label for="">Teaching license: </label>
+<div class="form-row">
+<div class="form-group col-4">
+	<div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+	</div>
+</div>
+</div>
+
+<label for="">Proof of residency: </label>
+<div class="form-row">
+<div class="form-group col-4">
+	<div class="custom-file">
+    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+	</div>
+</div>
+</div>
+
+</fieldset>
+
+<hr>
+<fieldset>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Comment</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Please leave any comment or note here."></textarea>
+  </div>
+</fieldset>
+<hr>
+
+<fieldset>
+<div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></label>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+</div> <!-- container -->
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.1/examples/album/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Inconsolata|Quicksand" rel="stylesheet">
+
+
+
+    <title>Finding Class</title>
+
+
+  <style type="text/css">
+
+  .checked {
+  color: orange;
+}
+    #sidebar { 
+  width: 190px; 
+  position: fixed; 
+  margin-left: 0px; 
+}
+main {
+  margin: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+select {width: 120px;}
+
+.card-body {
+  width: 300px;
+  height: 200px;
+  overflow: none;
+
+}
+
+.card-img-top{
+  height: 225px; width: 100%; display: block;
+}
+
+.card-img-top:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+  opacity: 0;
+}
+
+.card-img-top:hover .title {
+  top: 90px;
+  opacity: 1;
+}
+
+*{font-family: 'Quicksand', sans-serif;}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+	
+	div.left {
+left:500px;
+
+	
+}
+
+ footer {
+	align-content: center ;
+	background-color:#282828;
+	margin-bottom: 0;
+}
+
+
+
+  </style>
+
+
+  </head>
+
+  <body>
+  
+    <header>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><span>Stem</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="intro.html"> <font size= "+1">Home </font> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FindingClass.html"> <font size= "+1">Find class </font> </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="coach.html"><font size= "+1">Be a coach</font></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="steam.html" > <font size= "+1"> Toys & Blogs </font></a>
+      </li>
+	  
+	     <li class="nav-item">
+        <a class="nav-link" href="contact.html" > <font size= "+1"> Contact us </font></a>
+      </li>
+    </ul>
+	
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">Login</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:5px;">Sign up</button>
+    </form>
+	
+	 <a  href="#"><img src="shop.png" alt="toy" style="height:35px; width:40px; padding-right: 5px; padding-left: 5px;"></a>
+  </div>
+</nav>
+  
+<div class="sidebar" id="sidebar">
+<div class="container" align="left"style="  
+
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  background-color: white;
+  width: 300px;
+  height: 900px;
+  padding: 0px;
+  border-width: 20px;
+  border-style: inset;
+ "> 
+  <div class="col-md-12" >
+    <br/>
+    <h1 align="left"> Finding your class</h1>
+  </div>
+    <div class="col-md-12" style="text-align: left;">
+      <p></p>
+      <form>
+      <p></p>
+       
+            <p></p>
+            <p></p>
+
+            <hr/> <!--first line-->
+            <div class="slidecontainer">
+              <h4>Price range</h4>
+            <input type="range" min="500" max="10000" value="50" class="slider" id="myRange" step="500">
+            <p>Value: < <span id="demo"></span> baht</p>
+            </div>
+            <div class="slidecontainer">
+              <h4>Class Duration</h4>
+            <input type="range" min="1" max="5" value="50" class="slider" id="myRange1" step="">
+            <p>Value: <span id="demo1"></span> 5 hours</p>
+            </div>
+
+
+            <h5><a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne"><i class="fas fa-caret-down"></i> ACTIVITY</a></h5>
+            <div id="collapseOne" class="collapse one">
+                <div class="well">
+                <label><input type="checkbox" name="Outdoor"/>  Outdoor</label>
+                <label><input type="checkbox" name="Indoor"/> Indoor</label>
+            </div>
+            </div>
+            <p></p>
+            <hr/>
+            <h5><a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-caret-down"></i> STUDY COURSES</a></h5>
+          <div id="collapseTwo" class="collapse two">
+            <div class="well">
+            <label>
+            <input type="checkbox" name="Math for kids"/> Math for kids</label>
+            <br/>
+            <label>
+            <input type="checkbox" name="Science"/> Science</label> <br/>
+            <label>
+            <input type="checkbox" name="English writing"/></label> English writing
+            <p></p>
+            </div>
+          </div>
+
+            <hr/>
+
+            <h5><a data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-caret-down"></i> OTHER COURSES</a></h5>
+          <div id="collapseThree" class="collapse three">
+            <div class="well">
+            <label>
+            <input type="checkbox" name="Cooking"> Cooking </label><br/>
+            <label>
+            <input type="checkbox" name="Dancing"> Dancing </label><br/>
+            <label>
+            <input type="checkbox" name="Drawing"> Drawing </label><br/>
+            <label>
+            <input type="checkbox" name="Music lesson"> Music lesson</label>
+            <p></p>
+          </div>
+        </div>
+      </form>
+      <br/>
+           <a class="btn btn-primary" href="#" role="button" style="margin: 0px; padding: 10px;">Search >></a>
+      </div>
+    <br/>
+
+<br/>
+
+</div>
+</div>
+
+
+    <section style="text-align: right; margin-right: 199px; padding-right: 0px;">
+      <div class="row float-right" align="right" style="align-content: right; align-content: right; margin-left: : 80%; padding-left: : 80%; padding-right: 20px;">
+
+          <button type="button" class="btn btn-outline-primary"  style="width: 40px; height: 40px; margin-bottom: auto; padding-right: 10px;"><i class="fas fa-search"></i></button>
+          <input type="text" placeholder=" inset keywords..." style="height: 40px;">
+      </div>
+      <p></p>
+      <br/>
+            <div class="box" style="padding: 0; margin: 30px 0px 10px auto;">
+            Sort by: <input type="radio" name="Date" value=""> Date
+                     <input type="radio" name="Price" value=""> Price
+                     <input type="radio" name="Price" value=""> Rating
+            </div>
+    </section>
+
+    <main role="main">
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="overlay"></div>
+              <a href="class1.html">  
+                <img class="card-img-top" alt="Thumbnail [100%x225]" src="PICTURE/cooking.jpg">
+              </a>
+                <div class="card-body">
+                    <h5 class="card-text">Cooking class with Aj.Chaky</h5>  
+                    <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time: 1 p.m. - 3p.m. On Thursday</p>
+                    <p class="card-text">"Aj.Chaky is good at cooking?"<br/>
+                    price: 1800฿</p>
+                    <p class="title">Nothing for now</p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><a href="class1.html">Detail</a></i></button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/Drawing.jpg">
+                <div class="card-body">
+                    <h5 class="card-text">Drawing class with Aj.Jero</h5>
+                    <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time: 1 p.m. - 3p.m. On Mon-Wed </p>
+                    <p class="card-text">Surprisingly good at drawing<br/>
+                    price: 1500฿</p>
+                    <p class="title">Nothing for now</p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+					
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+					
+                      <button type="button" class="btn btn-sm btn-outline-primary"><a href="class1.html">Detail</a></button>
+					
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/hp_writing_boy.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Writing class with Poom</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time: 12 a.m. - 12 p.m. On Friday</p>
+                  <p class="card-text">Mastery in writing and teaching <br/> price: 1000฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary"><a href="class1.html">Detail</a></button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/math.jpg">
+
+                  <div class="card-body">
+                    <h5 class="card-text">Math class made Easy</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  2 p.m. - 4 p.m Everyday</p>
+                  <p class="card-text">Basic Mathematics for kids <br/> price: 2000฿</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary"><a href="class1.html">Detail</a></button>
+                      </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/activity.jpg">
+                <div class="card-body">
+                    <h5 class="card-text">Fun Outdoor Activity</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  8 a.m. - 12 a.m Everyday</p>
+                  <p class="card-text">Gurantee fun activity outdoor style! <br/> price: 2300฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Detail</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/yoga.jpg">
+                <div class="card-body">
+                    <h5 class="card-text">Fun Indoor Activity</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  8 a.m. - 12 a.m Everyday</p>
+                  <p class="card-text">Easy indoor activity! <br/> price: 3000฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Detail</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/Crafting.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Science Lab for kids</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  12 a.m. - 2 p.m On Sat-Sun</p>
+                  <p class="card-text">Fun lab activity for your scientist! <br/> price: 6000฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Detail</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/Dance.jpg">
+                <div class="card-body">
+                  <h5 class="card-text">Basic Dance class</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  12 a.m. - 4 p.m On Fri-Sat</p>
+                  <p class="card-text">Learn new dancing moves here!<br/> price: 5000฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Detail</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Weird picture that doesn't show up" src="PICTURE/swimming.jpg">
+                <div class="card-body">Swimming Class for starter</h5>
+                  <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+Time:  9 a.m. - 11 a.m. On Sat-Sun</p>
+                  <p class="card-text">For those who want to swim. . .<br/> price: 3000฿</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-success">Add</button>
+                      <button type="button" class="btn btn-sm btn-outline-primary">Detail</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span></small>
+                  </div>
+                </div>
+              </div>
+
+        <section class="text-center" style=""><h4><b><a href="FindingClass2.html">Next Page ></a></b></h4></section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+<div class="left">
+<fieldset class="foot">
+<footer class="page-footer font-small blue pt-4" >
+ 
+    
+
+      
+      <div class="row" style="padding-left:400px;">
+
+        
+        <div class="column" style="padding-right:300px">
+
+        	<h5 class="text-uppercase"><span style="padding-right:200px;color:white;">Parents</span></h5>
+          <ul class="list-unstyled">
+		  
+              <li>
+                <a href="#!">Find a Class</a>
+              </li>
+              <li>
+                <a href="#!">Birthday</a>
+              </li>
+               <li>
+                <a href="#!">FAQ</a>
+              </li>
+
+            </ul>
+          
+        </div>
+        
+
+        
+        <div class="column" style="padding:10px">
+
+            
+            
+
+            <ul class="list-unstyled">
+			  <li>
+				<h5 class="text-uppercase"><span style="padding-right:160px; color:white;">Coach</span></h5>
+			  </li>
+              <li>
+                <a href="#!">Our Coach</a>
+              </li>
+              <li>
+                <a href="#!">Become A Coach</a>
+              </li>
+              <li>
+                <a href="#!">Nominate Coach</a>
+              </li>
+              <li>
+                <a href="#!">Log In</a>
+              </li>
+              <li>
+                <a href="#!">Sign Up</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+          
+          <div class="column" style="padding-left:100px">
+
+           
+            <h5 class="text-uppercase"><span style="padding-right:160px;color:white;">Company</span></h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Our Approach</a>
+              </li>
+              <li>
+                <a href="#!">Team</a>
+              </li>
+              <li>
+                <a href="#!">Careers</a>
+              </li>
+              <li>
+                <a href="#!">Blog</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+
+      
+
+    </div>
+	
+</fieldset>  
+  </div>  
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+
+        <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./Album example for Bootstrap_files/popper.min.js"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js"></script>
+
+      <!-- Bootstrap core CSS -->
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Album example for Bootstrap_files/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">  
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>

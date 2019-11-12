@@ -1,0 +1,235 @@
+<html>
+<head>
+<title></title>
+
+<link rel="stylesheet" href="intro.css" type="text/css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<!-- load font awesome for Buttons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- Load Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+<style type="text/css">
+#container-floating:hover .nd5 {
+  animation-delay: 0.2s;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  line-height: 40px;
+}
+</style>
+
+</head>
+<body class="ground">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+	      <li class="nav-item">
+        <a class="nav-link" href="intro.html">Main Page</a>
+      </li>
+	  <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+        <a class="nav-link" href="chooseclass.html">Find a class</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="coach.html">Be a coach</a>
+      </li><li class="nav-item">
+        <a class="nav-link" href="steam.html">STEAM Blogs</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#about_us">About Us</a>
+      </li>
+	  	  <li class="nav-item">
+        <a class="nav-link" href="#contact_us">Contact us</a>
+      </li>
+	 <ul class="navbar-nav mr-auto">
+	<li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+	
+        <a class="nav-link" target="blank" href="login.html">Sign Up</a>
+			  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      </li>
+	  </ul>
+    </ul>
+    </div>
+  </div>
+  <nav class="navbar sticky-top navbar-dark bg-dark" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" "aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	
+	 <a class="nav-link" href="#find_a_class">Find a class</a>
+	   <a class="nav-link" href="#be_a_coach">Be a coach</a>
+	         <a class="nav-link" href="#steam_blogs">STEAM Blogs</a>
+			       <a class="nav-link" href="#about_us">About Us</a>
+				           <a class="nav-link" href="#contact_us">Contact us</a>
+  </nav>
+<div class="container">
+<div class="row" align="center">
+	<div class="col-md-12">
+		<br/>
+		<h1 align="float-left"> Picking a class near you. </h1>
+	</div>
+		<div class="col-md-12" style="text-align: left;">
+			<p></p>
+			<form>
+				ZIPCODE :
+				<input type="text" name="search_item">
+			</form>
+			<form>
+				Filtered by:
+						<select name="Teacher">
+							<option>Select your filter</option>
+							<option value="1">Closest to current Location</option>
+							<option value="2">Closest to current Date</option>
+							<option value="3">Upcoming season..</option>
+							 
+						</select>
+				Teacher :
+				<select name="Teacher">
+							<option>Select your teacher</option>
+							<option value="1">Mr.Jame Doe</option>
+							<option value="2">Mrs.Jane Sky</option>
+							<option value="3">Mr.Smith</option>	
+							</select></option>
+			</form>
+		</div>
+			<br/>
+			<br/>
+			<p></p>
+			<a href="" class="btn-pri"></a> <a class="btn btn-primary" href="#" role="button">Search >></a>
+		<br/>
+
+<br/>
+<hr>
+</div>
+<div class="row" align="center" id="menu">
+		  <div class="col-md-4 menuitem">
+		  	<br/>
+		    <img class="rounded-circle" src="cook.jpg" height="280" width="350">
+		    <h2 id="COOKING">COOKING</h2>
+
+		    <p>Sed viverra luctus quam aliquam ornare. Donec aliquam nisl vitae tortor efficitur, id facilisis elit ornare. Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci.</p>
+		    <br/>
+		  </span>
+		  </div>
+
+		  <div class="col-md-4 menuitem">
+		  	<br/>
+		    <img class="rounded-circle" src="sing.jpg" height="280" width="350">
+		    <h2>SINGING</h2>
+
+		    <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. Integer at est sit amet nisl fermentum vestibulum. In luctus ligula facilisis tincidunt venenatis. Fusce tristique diam non ornare tincidunt.  </p>
+		    <br/>
+		  </div>
+
+		  <div class="col-md-4 menuitem">
+		  	<br/>
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>DRAWING</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			      <br/>
+			    </div>
+		    <hr>
+		 
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>DANCING</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			      <br/>
+			    </div>  
+		   </div>
+		   <hr>
+		</div>
+ 
+   <div class="row" align="center" id="menu">
+
+		     <div class="col-md-4 menuitem">
+		    <div class="row-md-6">
+		      <img class="rounded-circle" src="http://placehold.it/60x60">
+		      <h3>READING ACTIVITY</h3>
+
+		      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+		      <br/>
+		    </div>
+		    <hr>
+		 
+		    <div class="row-md-6">
+		      <img class="rounded-circle" src="http://placehold.it/60x60">
+		      <h3>Class 6</h3>
+
+		      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+		      <br/>
+		    </div>  
+   </div>
+			  <div class="col-md-4 menuitem">
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>Class 7</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			      <br/>
+			    </div>
+			    <hr>
+			 
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>Class 8</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			     <br/>
+			    </div>  
+   </div>
+			  <div class="col-md-4 menuitem">
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>Class 9</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			      <br/>
+			    </div>
+			    <hr>
+			 
+			    <div class="row-md-6">
+			      <img class="rounded-circle" src="http://placehold.it/60x60">
+			      <h3>Class 10</h3>
+
+			      <p>Vestibulum tempor velit eget odio laoreet, eu placerat lorem sagittis. Ut fermentum placerat orci. </p>
+			      <br/>
+			    </div>  
+			   </div>
+			   <a href="" text-align="right">Next page>></a>
+			</div>
+		<a href="" class="nd5" id="container-floating: hover">FREE</a>
+</body>		

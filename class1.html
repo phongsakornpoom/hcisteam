@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.1/examples/album/# -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Inconsolata|Quicksand" rel="stylesheet">
+
+
+
+
+
+    <title>Album example for Bootstrap</title>
+
+
+  <style type="text/css">
+
+  .checked {
+  color: orange;
+}
+    #sidebar { 
+  width: 190px; 
+  position: fixed; 
+  margin-left: 0px; 
+}
+main {
+  margin: 200px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+select {width: 120px;}
+
+.card-body {
+  width: 400px;
+  height: 200px;
+  overflow: none;
+
+}
+
+.card-img-top:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+  opacity: 0;
+}
+
+.card-img-top:hover .title {
+  top: 90px;
+  opacity: 1;
+}
+
+*{font-family: 'Quicksand', sans-serif;}
+
+
+img{
+  height: 300px;
+  width: 450px;
+}
+.col-md-6{
+  padding-left: 100px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 0px solid #ccc;
+  border-top: none;
+}
+
+/* component */
+
+.star-rating {
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
+article {
+  background-color:#ffe;
+  box-shadow:0 0 1em 1px rgba(0,0,0,.25);
+  color:#006;
+  font-family:cursive;
+  font-style:italic;
+  margin:4em;
+  max-width:30em;
+  padding:2em;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+	div.left {
+left:500px;
+
+	
+}
+
+ footer {
+	align-content: center ;
+	background-color:#282828;
+	margin-bottom: 0;
+}
+
+  </style>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+  </head>
+
+  <body>
+  
+    <header>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><span>Stem</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="intro.html"> <font size= "+1">Home </font> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FindingClass.html"> <font size= "+1">Find class </font> </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="coach.html"><font size= "+1">Be a coach</font></a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="steam.html" > <font size= "+1"> Toys & Blogs </font></a>
+      </li>
+	  
+	     <li class="nav-item">
+        <a class="nav-link" href="contact.html" > <font size= "+1"> Contact us </font></a>
+      </li>
+    </ul>
+	
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:10px;">Login</button>
+    </form>
+	<form class="form-inline my-2 my-lg-0" action="Registration.html">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-left:5px;">Sign up</button>
+    </form>
+	
+	 <a  href="#"><img src="shop.png" alt="toy" style="height:35px; width:40px; padding-right: 5px; padding-left: 5px;"></a>
+  </div>
+</nav>
+  
+
+
+    <section style="margin-right: 300px; margin-top: 20px; padding: 0px;">
+            <div class="container">
+            <a href="FindingClass.html" style="font-size: 25px;"><b>Finding Class </b></a><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i><b><a href="class1.html" style="font-size: 25px;">  Cooking Class</b></a>
+            </div>
+    </section>
+
+    <main role="main">
+
+      <div class="album py-5 bg-light">
+        <div class="row">
+          <div class="col-md-6" style="padding-left: 100px;align-items: center;">
+            <img src="PICTURE/cooking.jpg">
+          </div>
+
+          <div class="col-md-6">
+            <h2>Cooking Class with Aj.Chaky</h2>
+            <div class="card-body">
+                    <h5 class="card-text">Cooking class with Aj.Chaky</h5>  
+                    <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                  Time: 1 p.m. - 3p.m. On Thursday</p>
+                    <p class="card-text">
+                    price: 1800฿</p>
+                    <p class="title">Nothing for now</p>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn">
+                      <button type="button" class="btn btn-labeled btn-success">
+                      <span class="btn-label"><i class="fas fa-plus-circle"></i></span>   Add</button>
+                      <button type="button" class="btn btn-labeled btn-warning">
+                      <span class="btn-label"><i class="far fa-bookmark"></i></span>  Bookmark</button>
+                    </div>
+                    <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container-fluid" style="padding: 20px; margin-left: 50px; margin-right: 50px;">
+          <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Description</button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">Reviews(2)</button>
+            </div>
+
+            <div id="London" class="tabcontent"">
+              <div class="card"  style="background-color: white; padding: 20px;">
+              <h3>Cooking Class</h3>
+              <p><i>"Learning about how flavors come together and how to create them."  </i></p>
+
+<p>Our students will learn about kitchen sanitation and safety. Making new recipes every lesson to develop and challenge their skills in kitchen. This class also offer several lesson skill training in kitchen and have fun cooking new dishes. </p>
+
+              <div class="row bg-light" style="padding: 60px; margin: auto; border-style: solid black; border: 2px; ">
+                <div class="col-md-8" style="padding-top: 100px;">
+                <i><b style="margin-left: 180px;">"My speciality is teaching, it iswhat i also love and passionate about"</b></i><br/><p align="right">Mr. Chaklam Placeholder</p><div class="link" align="right"><abbr title="Facebook Login"><a href=""><i class="fab fa-facebook-f fa-2x"></i></a></abbr>  <abbr title="Google Plus Login"><a href=""><i class="fab fa-google-plus fa-2x"></i></a></abbr></div></div>
+                <div class="col-md-4"><img src="PICTURE/teacher1.jpg" style="width: 250px; height: 300px; align-content: right; margin-left:80px; ">
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div id="Paris" class="tabcontent">
+              <div class="card" style="padding: 20px;">
+             <h3>   Reviews</h3>
+              <p></p> 
+              <div class="pfp container">
+                <div class="box" style="margin-right: 20px;">
+              <a href="https://www.facebook.com/blaze.burner.52" target="_blank"> <img src="PICTURE/user1.jpg" class="fakeimg2" align ="left"  style="height:50px; width: 50px;" ></a>
+                </div>
+                <div style="padding-left: 80px;">
+              <a href="https://www.facebook.com/blaze.burner.52" target="_blank"> <b>Kamin S Prommas </b></a><br/>
+              <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+              <p>I very much like this class. Thou can rest assures of the teacher willingness to teach thou kids. Very good.</p>
+                </div>
+            </div>
+        <hr/>
+            <div class="pfp container">
+                <div class="box" style="margin-right: 20px;">
+              <a href="https://www.facebook.com/jero.mazenen" target="_blank"> <img src="PICTURE/user2.jpg" class="fakeimg2" align ="left"  style="height:50px; width: 50px;" ></a>
+                </div>
+                <div style="padding-left: 80px;">
+              <a href="https://www.facebook.com/jero.mazenen" target="_blank"> <b>Jero Mazenen </b></a><br/>
+              <small class="text-muted">rating: 
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span></small>
+              <p>Just Cause 2 is very good game.</p>
+                </div>
+            </div>
+              <hr/>
+            <div class="pfp container">
+                <div class="box" style="margin-right: 20px; margin-left: 60px;">
+                  <div class="star-rating">
+  <input type="radio" id="5-stars" name="rating" value="5" checked=""/>
+  <label for="5-stars" class="star">&#9733;</label>
+  <input type="radio" id="4-stars" name="rating" value="4" />
+  <label for="4-stars" class="star">&#9733;</label>
+  <input type="radio" id="3-stars" name="rating" value="3" />
+  <label for="3-stars" class="star">&#9733;</label>
+  <input type="radio" id="2-stars" name="rating" value="2" />
+  <label for="2-stars" class="star">&#9733;</label>
+  <input type="radio" id="1-star" name="rating" value="1" />
+  <label for="1-star" class="star">&#9733;</label>
+</div>
+
+               <textarea rows="4" cols="100" name="comment" placeholder=" 
+                Enter text here..."></textarea>
+                <br/>
+                <abbr title="Facebook Login"><a href=""><i class="fab fa-facebook-f fa-2x"></i></a></abbr>  <abbr title="Google Plus Login"><a href=""><i class="fab fa-google-plus fa-2x"></i></a></abbr>  <button class="btn-primary btn-md" id="myBtn" style="margin-left: 550px;"><b>Post Review</b></button> 
+                <small><a href="">  have an account? login</a></small>
+                </div>
+            </div>
+             
+             <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p align="center">Please Log in before continute. . .</p>
+  </div>
+                <hr>
+              </div>
+ 
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    
+<div class="left">
+<fieldset class="foot">
+<footer class="page-footer font-small blue pt-4" >
+ 
+    
+
+      
+      <div class="row" style="padding-left:400px;">
+
+        
+        <div class="column" style="padding-right:300px">
+
+        	<h5 class="text-uppercase"><span style="padding-right:200px;color:white;">Parents</span></h5>
+          <ul class="list-unstyled">
+		  
+              <li>
+                <a href="#!">Find a Class</a>
+              </li>
+              <li>
+                <a href="#!">Birthday</a>
+              </li>
+               <li>
+                <a href="#!">FAQ</a>
+              </li>
+
+            </ul>
+          
+        </div>
+        
+
+        
+        <div class="column" style="padding:10px">
+
+            
+            
+
+            <ul class="list-unstyled">
+			  <li>
+				<h5 class="text-uppercase"><span style="padding-right:160px;color:white;">Coach</span></h5>
+			  </li>
+              <li>
+                <a href="#!">Our Coach</a>
+              </li>
+              <li>
+                <a href="#!">Become A Coach</a>
+              </li>
+              <li>
+                <a href="#!">Nominate Coach</a>
+              </li>
+              <li>
+                <a href="#!">Log In</a>
+              </li>
+              <li>
+                <a href="#!">Sign Up</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+          
+          <div class="column" style="padding-left:100px">
+
+           
+            <h5 class="text-uppercase"><span style="padding-right:160px;color:white;">Company</span></h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Our Approach</a>
+              </li>
+              <li>
+                <a href="#!">Team</a>
+              </li>
+              <li>
+                <a href="#!">Careers</a>
+              </li>
+              <li>
+                <a href="#!">Blog</a>
+              </li>
+            </ul>
+
+          </div>
+          
+
+
+      
+
+    </div>
+	
+</fieldset>  
+  </div>
+  
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./Album example for Bootstrap_files/popper.min.js"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js"></script>
+
+      <!-- Bootstrap core CSS -->
+    <link href="./Album example for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Album example for Bootstrap_files/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">  
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
